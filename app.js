@@ -23,6 +23,7 @@ async function dic(word) {
         const audio = new Audio();
         audio.src = data[0].phonetics[0].audio;
         audio.play();
+        audio.pause();
     })
     document.querySelector(".lin").setAttribute("href", data[0].sourceUrls[0]);
     document.querySelector(".lin").innerHTML = data[0].sourceUrls[0];
